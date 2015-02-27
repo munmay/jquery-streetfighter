@@ -1,7 +1,12 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function() {
+  $('.ryu').mouseenter(function() {
+    $('.ryu-still').hide();
+    $('.ryu-ready').show();
+  })
+
+  .mouseleave(function(){
+  	$('.ryu-ready').hide();
+  	$('.ryu-still').show();
+  });
 });
 
-    $(".ryu-still").hide();
-	$(".ryu-throwing").show();
-	$(".hadouken").show();
